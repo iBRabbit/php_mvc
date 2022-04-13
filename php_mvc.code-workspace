@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"workbench.preferredDarkColorTheme": "Tokyo Night",
+		"workbench.colorTheme": "Tokyo Night"
+	}
+}
