@@ -36,10 +36,14 @@ class App {
     }
 
     public function parseURL() {
+        $url = [];
         if(isset($_GET['url'])) {
             $url = rtrim($_GET['url'], '/'); 
             $url = filter_var($url, FILTER_SANITIZE_URL); // supaya url bersih dari karakter aneh
             $url = explode('/', $url);
+            return $url;
+        } else {
+            $url[0] = 'null';
             return $url;
         }
     }

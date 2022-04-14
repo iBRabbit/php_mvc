@@ -1,0 +1,2 @@
+Controller -> Nama Folder atau Headline
+Method -> Isi dalam headline / header
