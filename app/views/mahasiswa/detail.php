@@ -1,6 +1,6 @@
 <div class="container mt-3">
     <h3>List Mahasiswa</h3>
-
+        
     <div class="card border-primary mb-3" style="max-width: 18rem;">
         <div class="card-header">Mahasiswa</div>
         <div class="card-body text-primary">
