@@ -1,44 +1,16 @@
 <div class="container mt-5">
     <h1>Daftar mahasiswa</h1>
-    <table class="table">
-        <thead>
-            <tr>
-                <th scope="col">Nama</th>
-                <th scope="col">NIM</th>
-                <th scope="col">Email</th>
-            </tr>
-        </thead>
-        <tbody>
 
+    <ul class="list-group">
+        <?php foreach($data['mhs'] as $mhs) :?>
             
-            <?php foreach($data['mhs'] as $mhs) :?>
-                <tr>
-                <td><?= $mhs['nama']; ?></td>
-                <td><?= $mhs['nim']; ?></td>
-                <td><?= $mhs['email']; ?></td>
-                </tr>
-            <?php endforeach; ?>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+            <?= $mhs['nama']; ?>
+            <a class = "badge bg-primary" href="<?= BASE_URL . 'mahasiswa/detail/' . $mhs['id']?>" >Detail</a>
+        </li>
             
+        <?php endforeach; ?>
+    </ul>
+    </tbody>
 
-
-            <!-- <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-            </tr> -->
-        </tbody>
-    </table>
 </div>
-
